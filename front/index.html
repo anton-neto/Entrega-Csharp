@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistema de Controle de Estoque</h1>
+            <nav>
+                <button onclick="showSection('produtos')">Produtos</button>
+                <button onclick="showSection('categorias')">Categorias</button>
+                <button onclick="showSection('fornecedores')">Fornecedores</button>
+                <button onclick="showSection('movimentacoes')">Movimentações</button>
+                <button onclick="showSection('vendas')">Vendas</button>
+            </nav>
+        </header>
+
+        <main>
+            <section id="produtos" class="section">
+                <div class="list-header">
+                    <h2>Produtos</h2>
+                    <div class="search-container">
+                        <input type="text" id="pesquisaProduto" placeholder="Pesquisar produtos..." class="search-input">
+                    </div>
+                    <button class="btn-adicionar" onclick="window.location.href='cadastro.html'">Novo Produto</button>
+                    <button class="btn-adicionar" onclick="window.location.href='indexRelatorio.html'">Relatório</button>
+
+                </div>
+                <table id="produtosTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Quantidade</th>
+                            <th>Preço</th>
+                            <th>Categoria</th>
+                            <th>Fornecedor</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+
+            <section id="categorias" class="section hidden">
+                <div class="list-header">
+                    <h2>Categorias</h2>
+                    <div class="search-container">
+                        <input type="text" id="pesquisaCategoria" placeholder="Pesquisar categorias..." class="search-input">
+                    </div>
+                    <button class="btn-adicionar" onclick="window.location.href='cadastro-categoria.html'">Nova Categoria</button>
+                </div>
+                <table id="categoriasTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+
+            <section id="fornecedores" class="section hidden">
+                <div class="list-header">
+                    <h2>Fornecedores</h2>
+                    <div class="search-container">
+                        <input type="text" id="pesquisaFornecedor" placeholder="Pesquisar fornecedores..." class="search-input">
+                    </div>
+                    <button class="btn-adicionar" onclick="window.location.href='cadastro-fornecedor.html'">Novo Fornecedor</button>
+                </div>
+                <table id="fornecedoresTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>CNPJ</th>
+                            <th>Email</th>
+                            <th>Telefone</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+
+            <section id="movimentacoes" class="section hidden">
+                <div class="list-header">
+                    <h2>Movimentações</h2>
+                    <div class="search-container">
+                        <input type="text" id="pesquisaMovimentacao" placeholder="Pesquisar movimentações..." class="search-input">
+                    </div>
+                    <button class="btn-adicionar" onclick="window.location.href='cadastro-movimentacao.html'">Nova Movimentação</button>
+                </div>
+                <table id="movimentacoesTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Data</th>
+                            <th>Produto</th>
+                            <th>Tipo</th>
+                            <th>Quantidade</th>
+                            <th>Observação</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+
+            <section id="vendas" class="section hidden">
+                <div class="list-header">
+                    <h2>Vendas</h2>
+                    <div class="search-container">
+                        <input type="text" id="pesquisaVenda" placeholder="Pesquisar vendas..." class="search-input">
+                    </div>
+                    <button class="btn-adicionar" onclick="window.location.href='cadastro-venda.html'">Nova Venda</button>
+                </div>
+                <table id="vendasTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Data</th>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Preço Unitário</th>
+                            <th>Total</th>
+                            <th>Observação</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

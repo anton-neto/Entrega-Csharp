@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\xampp\\htdocs\\ControleDeEstoque\\front\\cadastro-categoria.html",
+      "PackagePath": "staticwebassets\\cadastro-categoria.html"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\ControleDeEstoque\\front\\cadastro-fornecedor.html",
+      "PackagePath": "staticwebassets\\cadastro-fornecedor.html"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\ControleDeEstoque\\front\\cadastro-movimentacao.html",
+      "PackagePath": "staticwebassets\\cadastro-movimentacao.html"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\ControleDeEstoque\\front\\cadastro.html",
+      "PackagePath": "staticwebassets\\cadastro.html"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\ControleDeEstoque\\front\\editar-categoria.html",
+      "PackagePath": "staticwebassets\\editar-categoria.html"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\ControleDeEstoque\\front\\editar-fornecedor.html",
+      "PackagePath": "staticwebassets\\editar-fornecedor.html"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\ControleDeEstoque\\front\\editar-movimentacao.html",
+      "PackagePath": "staticwebassets\\editar-movimentacao.html"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\ControleDeEstoque\\front\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\ControleDeEstoque\\front\\script.js",
+      "PackagePath": "staticwebassets\\script.js"
+    },
+    {
+      "Id": "C:\\xampp\\htdocs\\ControleDeEstoque\\front\\styles.css",
+      "PackagePath": "staticwebassets\\styles.css"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ControleDeEstoque.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ControleDeEstoque.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ControleDeEstoque.props",
+      "PackagePath": "build\\ControleDeEstoque.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ControleDeEstoque.props",
+      "PackagePath": "buildMultiTargeting\\ControleDeEstoque.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ControleDeEstoque.props",
+      "PackagePath": "buildTransitive\\ControleDeEstoque.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

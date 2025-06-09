@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Produto - Controle de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Editar Produto</h1>
+            <button onclick="window.location.href='index.html'" class="btn-voltar">Voltar</button>
+        </header>
+
+        <div class="form-container">
+            <form id="produtoForm">
+                <div class="form-group">
+                    <label for="fornecedorProduto">Fornecedor:</label>
+                    <select id="fornecedorProduto" required>
+                        <option value="">Selecione um fornecedor</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoriaProduto">Categoria:</label>
+                    <select id="categoriaProduto" required>
+                        <option value="">Selecione uma categoria</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="nomeProduto">Nome:</label>
+                    <input type="text" id="nomeProduto" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantidadeProduto">Quantidade:</label>
+                    <input type="number" id="quantidadeProduto" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="precoProduto">Preço:</label>
+                    <input type="number" id="precoProduto" step="0.01" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricaoProduto">Descrição:</label>
+                    <textarea id="descricaoProduto" rows="3" required></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-salvar">Atualizar Produto</button>
+                    <button type="button" onclick="window.location.href='index.html'" class="btn-cancelar">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

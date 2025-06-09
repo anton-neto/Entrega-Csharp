@@ -1,0 +1,99 @@
+@baseUrl = http://localhost:5077/api
+
+### Listar todos os produtos
+GET {{baseUrl}}/produto
+
+### Buscar produto por ID
+GET {{baseUrl}}/produto/1
+
+### Listar todas as categorias
+GET {{baseUrl}}/categoria
+
+### Buscar categoria por ID
+GET {{baseUrl}}/categoria/1
+
+### Listar todos os fornecedores
+GET {{baseUrl}}/fornecedor
+
+### Buscar fornecedor por ID
+GET {{baseUrl}}/fornecedor/1
+
+### Listar todas as movimentações
+GET {{baseUrl}}/movimentacao
+
+### Buscar movimentação por ID
+GET {{baseUrl}}/movimentacao/1
+
+### Buscar movimentações de um produto
+GET {{baseUrl}}/movimentacao/produto/1
+
+### Adicionar novo produto
+POST {{baseUrl}}/produto
+Content-Type: application/json
+
+{
+    "nome": "Novo Produto",
+    "descricao": "Descrição do novo produto",
+    "preco": 100.00,
+    "quantidade": 10,
+    "categoriaId": 1,
+    "fornecedorId": 1
+}
+
+### Adicionar nova categoria
+POST {{baseUrl}}/categoria
+Content-Type: application/json
+
+{
+    "nome": "Nova Categoria",
+    "descricao": "Descrição da nova categoria"
+}
+
+### Adicionar novo fornecedor
+POST {{baseUrl}}/fornecedor
+Content-Type: application/json
+
+{
+    "nome": "Novo Fornecedor",
+    "cnpj": "98765432109876",
+    "telefone": "41987654321",
+    "email": "contato@novofornecedor.com",
+    "endereco": "Rua Nova, 123",
+    "cidade": "Curitiba",
+    "estado": "PR",
+    "cep": "80000-000"
+}
+
+### Adicionar nova movimentação (entrada)
+POST {{baseUrl}}/movimentacao
+Content-Type: application/json
+
+{
+    "produtoId": 1,
+    "tipo": "Entrada",
+    "quantidade": 5,
+    "observacao": "Entrada de estoque"
+}
+
+### Adicionar nova movimentação (saída)
+POST {{baseUrl}}/movimentacao
+Content-Type: application/json
+
+{
+    "produtoId": 1,
+    "tipo": "Saída",
+    "quantidade": 2,
+    "observacao": "Saída de estoque"
+}
+
+### Deletar produto
+DELETE {{baseUrl}}/produto/1
+
+### Deletar categoria
+DELETE {{baseUrl}}/categoria/1
+
+### Deletar fornecedor
+DELETE {{baseUrl}}/fornecedor/1
+
+### Deletar movimentação
+DELETE {{baseUrl}}/movimentacao/1 

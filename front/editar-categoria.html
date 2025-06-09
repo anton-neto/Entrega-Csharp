@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Categoria - Controle de Estoque</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Editar Categoria</h1>
+            <nav>
+                <button onclick="window.location.href='index.html'">Voltar</button>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section">
+                <div class="form-container">
+                    <h2>Formulário de Categoria</h2>
+                    <form id="categoriaForm">
+                        <input type="text" id="nomeCategoria" placeholder="Nome da Categoria" required>
+                        <textarea id="descricaoCategoria" placeholder="Descrição da Categoria" required></textarea>
+                        <div class="form-buttons">
+                            <button type="submit">Atualizar Categoria</button>
+                            <button type="button" onclick="limparFormularioCategoria()">Limpar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
