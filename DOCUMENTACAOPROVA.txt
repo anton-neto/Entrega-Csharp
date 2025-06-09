@@ -1,0 +1,125 @@
+Documentação em TXT CONTROLE DE ESTOQUE (AUTOPEÇAS)
+
+ANTONIO NETO
+GUSTAVO GIROTO
+VICTOR ANHAYA
+
+
+
+Nós fizemos o model de vendas para nosso sistema de controle de estoque, e para isso a gente utilizou a quantidade de estoque 
+
+* (vezes) o preço unitário, calculando automaticamente o preço da venda. Um exemplo prático seria: o usuário escolher duas bandejas 
+
+de suspensão com preço unitário de: R$380,00 o resultado seria R$ 760,00. No nosso caso, esse valor já é preenchido automaticamente
+
+para o usuário 
+
+
+
+
+DOCUMENTAÇÃO DO FRONTEND 
+
+
+# Documentação do Frontend - Sistema de Controle de Estoque
+
+## O que é?
+Este é o frontend do meu sistema de Controle de Estoque. Fiz usando HTML, CSS e JavaScript puro. É uma interface que permite gerenciar produtos, vendas, fornecedores e categorias de forma fácil.
+
+## Como organizei o projeto?
+
+### Páginas que fiz:
+- `index.html`: É a página principal, onde mostra tudo
+- `cadastro.html`: Onde cadastro produtos novos
+- `cadastro-venda.html`: Onde registro as vendas
+- `cadastro-movimentacao.html`: Onde controlo entrada e saída de produtos
+- `cadastro-fornecedor.html`: Onde cadastro fornecedores
+- `cadastro-categoria.html`: Onde crio categorias para os produtos
+
+### Páginas de edição:
+- `editar-produto.html`: Para corrigir produtos
+- `editar-venda.html`: Para corrigir vendas
+- `editar-movimentacao.html`: Para corrigir movimentações
+- `editar-fornecedor.html`: Para atualizar dados de fornecedores
+- `editar-categoria.html`: Para atualizar categorias
+
+### Arquivos importantes:
+- `styles.css`: Onde coloquei todo o visual do sistema
+- `script.js`: Onde programei todas as funcionalidades
+- `js/`: Pasta onde coloquei alguns scripts extras
+
+## O que cada página faz?
+
+### Página Principal
+- Mostra um resumo do estoque
+- Lista todos os produtos
+- Tem campo de busca
+- Botões rápidos para cadastrar as coisas
+
+### Cadastro de Produtos
+- Formulário para cadastrar produtos
+- Campos para:
+  - Nome e descrição
+  - Preço e quantidade
+  - Categoria e fornecedor
+- Posso editar e apagar produtos
+
+### Cadastro de Vendas
+- Onde registro as vendas
+- Escolho o produto
+- Coloco a quantidade
+- Sistema calcula o valor total
+- Registro a data
+- Vejo o histórico de vendas
+
+### Cadastro de Movimentações
+- Registro quando entra ou sai produto
+- Escolho o produto
+- Coloco a quantidade
+- Escolho se é entrada ou saída
+- Registro a data
+- Vejo o histórico de movimentações
+
+### Cadastro de Fornecedores
+- Formulário para cadastrar fornecedores
+- Campos para:
+  - Nome e CNPJ
+  - Contato
+  - Endereço
+
+### Cadastro de Categorias
+- Onde crio categorias para os produtos
+- Nome e descrição
+- Vejo quais produtos estão nela
+
+## Como ficou o visual?
+- Usei um layout que se adapta a qualquer tela
+- Cores que combinam entre si
+- Botões, formulários e tabelas bem estilizados
+- Modais para confirmar ações
+- Animações suaves
+- Mensagens de erro e sucesso
+
+## O que o JavaScript faz?
+- Conecta com o backend
+- Valida os formulários
+- Atualiza a tela sem recarregar
+- Mostra mensagens de erro e sucesso
+- Faz os cálculos automáticos
+- Guarda alguns dados no navegador
+
+## Como se comunica com o backend?
+- Usa API REST
+- Envia e recebe dados de:
+  - Produtos
+  - Vendas
+  - Movimentações
+  - Fornecedores
+  - Categorias
+- Trata as respostas
+
+## O que fiz para garantir que funciona bem?
+- Validei todos os formulários
+- Testei em diferentes navegadores
+- Fiz tratamento de erros
+- Otimizei o carregamento das páginas
+- Adicionei mensagens para o usuário 
